@@ -11,19 +11,27 @@ import "./Layout.css";
  *
  * @returns {JSX.Element}
  */
-function Layout() {
+ export default function Layout() {
   return (
-    <div className="container-fluid">
-      <div className="row h-100">
-        <div className="col-md-2 side-bar">
+    <div
+      className="container-fluid bg-dark"
+      style={{
+        fontFamily: "Ariel",
+        // backgroundColor: "#FFB93A",
+        // backgroundColor: 
+        color: "#FFB93A",
+        height: "200vh",
+        // width: "200vh"
+      }}
+    >
+      <div className="row">
+        <div className="col-2 p-0">
           <Menu />
         </div>
-        <div className="col">
+        <div className="col-10">
           <Routes />
         </div>
       </div>
     </div>
   );
 }
-
-export default Layout;
