@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-// import ErrorAlert from "../layout/ErrorAlert";
+import ErrorAlert from "../layout/ErrorAlert";
 import { createTable } from "../utils/api";
 
 // this returns a 'NewTable' form to create a new table that sits an entered quantity
 export default function NewTable({ loadDashboard }) {
     const history = useHistory();
 
-    const [error, setError] = useState([]);
+    const [error, setError] = useState(undefined);
     const [formData, setFormData] = useState({ //sets initial state of a table
         table_name: "",
         capacity: "",
@@ -46,6 +46,7 @@ return foundError === null;
 
     return (
         <div >
+          {error ? <ErrorAlert errorMessage={error}/> : <></>}
           <h2 className="font-weight-bold d-flex justify-content-center mt-4">
             New Table
           </h2>
