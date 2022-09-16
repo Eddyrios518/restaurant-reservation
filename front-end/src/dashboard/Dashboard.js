@@ -68,11 +68,11 @@ return (
   <main>
     <div
       className="w-80 ml-2 pr-4 mr-2 pt-4 pb-4"
-      style={{ fontFamily: "Courier", height: "100vh" }}
+      style={{ fontFamily: "Brush Script MT", height: "100vh" }}
     >
       <h1
         className="d-flex justify-content-center text-center text-wrap mt-3"
-        style={{ fontSize: "50px" }}
+        style={{ fontSize: "100px" }}
       >
         Periodic Tables
       </h1>

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import { Link } from "react-router-dom";
 
 /**
@@ -15,7 +16,7 @@ import { Link } from "react-router-dom";
         className="nav navbar-nav mt-3"
         style={{ position: "fixed", zIndex: "2" }}
       >
-        <ul className="nav navbar-nav bg-dark" style={{ backgroundColor: "#FFB93A", fontFamily: "Ariel" }}>
+        <ul className="nav navbar-nav bg-dark" style={{ backgroundColor: "#FFB93A", fontFamily: "Brush Script MT" }}>
           <li className="nav-item p-1 ">
             <button
               type="button"
@@ -26,8 +27,8 @@ import { Link } from "react-router-dom";
             >
               Home
               <Link className="nav-link " to="/">
-                <span className="material-icons" style={{ color: "#FF5733" }}>
-                  home
+                <span className="material-icons" style={{ color: "green" }}>
+                 Come in!
                 </span>
               </Link>
             </button>
@@ -43,8 +44,8 @@ import { Link } from "react-router-dom";
             >
               Search
               <Link className="nav-link " to="/search">
-                <span className="material-icons" style={{ color: "#FF5733" }}>
-                  search
+                <span className="material-icons" style={{ color: "green" }}>
+                  Where you at?
                 </span>
               </Link>
             </button>
@@ -57,15 +58,15 @@ import { Link } from "react-router-dom";
               data-placement="bottom"
               title="New Reservation"
             >
-              Reserve
+            Reserve
               <Link className="nav-link " to="/reservations/new">
-                <span className="material-icons mr-2" style={{ color: "#FF5733" }}>
-                  local_dining
+                <span className="material-icons" style={{ color: "green" }}>
+                  Hungry yet?
                 </span>
               </Link>
             </button>
           </li>
-          <li className="nav-item p-1">
+          <li className="nav-item p-9">
             <button
               type="button"
               className="btn text-white"
@@ -75,8 +76,8 @@ import { Link } from "react-router-dom";
             >
               Table
               <Link className="nav-link " to="/tables/new">
-                <span className="material-icons" style={{ color: "#FF5733" }}>
-                  table_restaurant
+                <span className="material-icons" style={{ color: "green" }}>
+                  Who's coming?
                 </span>
               </Link>
             </button>
